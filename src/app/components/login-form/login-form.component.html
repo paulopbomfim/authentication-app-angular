@@ -1,0 +1,37 @@
+<main>
+  <div class="login-container">
+    <header class="title-session">
+      <img src="../../../assets/Group.svg" alt="Ignite lab logo">
+
+      <div class="title">
+        <h1>Ignite Lab</h1>
+        <span>Faça login e comece a usar!</span>
+      </div>
+    </header>
+
+    <form [formGroup]="loginForm" (submit)="SubmitHandler()" class="form-container">
+      <label for="email">
+        Endereço de e-mail
+        <input type="email" formControlName="email" class="email-input" [ngClass]="showInvalidWarning ? 'error': ''" placeholder="Digite seu e-mail">
+      </label>
+
+      <label for="password">
+        Sua senha
+        <input type="password" formControlName="password" class="password-input" [ngClass]="showInvalidWarning ? 'error': ''" placeholder="●●●●●●●●">
+      </label>
+
+      <label class="remember-session" for="checkbox">
+        <input type="checkbox" formControlName="checkbox" id="checkbox">
+        <span class="checkmark"></span>
+        Lembrar de mim
+      </label>
+
+      <button type="submit">Entrar</button>
+    </form>
+
+    <footer>
+      <a href="#">Esqueceu sua senha?</a>
+      <span>Não possui conta? <a href="#">Crie uma agora!</a></span>
+    </footer>
+  </div>
+</main>

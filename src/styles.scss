@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gray-900: #121214;
+  --gray-800: #131516;
+  --gray-700: #202024;
+  --gray-600: #474755;
+  --gray-400: #7c7c8a;
+  --gray-200: #c4c4cc;
+  --gray-100: #e1e1e6;
+
+  --green-700: #00cc8f;
+  --green-500: #00ffb5;
+  --green-300: #4dffc9;
+
+  --command-black: #000;
+  --command-white: #fff;
+
+  --error: #FF4D40;
+  --info: #81D8F7;
+  --warning: #FFEF0D;
+  --success: #4DFFCB;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--gray-100);
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%; //? 1rem = 15px
+  }
+};
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%; //? 1rem = 14px
+  }
+};
+
+@media (max-width: 480px) {
+  html {
+    font-size: 81.25%; //? 1rem = 13px
+  }
+};
